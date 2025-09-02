@@ -1,11 +1,14 @@
+import React from 'react'
+import InputForm from './pages/InputForm'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-function App() {
-
+export default function App() {
   return (
-    <div>
-      Welcome to UWI!
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/form' element={<InputForm />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
-export default App
